@@ -2,19 +2,16 @@ class Solution {
 
     public boolean isHappy(int n) {
 
-        HashSet<Integer> set = new HashSet<>();
+        int slow = n;
+        int fast = n;
 
-        while (n != 1) {
-
-            if (set.contains(n)) {
-                return false;
-            }
-
-            set.add(n);
-            n = getNextNumber(n);
+        do {
+            slow = getNextNumber(slow);
+            fast = getNextNumber(getNextNumber(fast));
         }
+        while (slow != fast);
 
-        return true;
+        return slow == 1;
     }
 
     private int getNextNumber(int n) {
