@@ -1,5 +1,13 @@
+<div align="center">
+  <h1>🚀 50 Days of Code: #DrGViswanathan Challenge</h1>
+  <p><i>Building problem-solving skills</i></p>
 
-# 🚀 50 Days DSA Challenge
+  <img src="https://img.shields.io/badge/Language-Java-00599C?style=for-the-badge" alt="Java"/>
+  <img src="https://img.shields.io/badge/Institution-VIT_Bhopal-blue?style=for-the-badge" alt="VIT Bhopal"/>
+  <img src="https://img.shields.io/badge/Status-In_Progress-brightgreen?style=for-the-badge" alt="Status"/>
+</div>
+
+---
 
 Welcome to my **50 Days DSA Challenge** repository!
 
