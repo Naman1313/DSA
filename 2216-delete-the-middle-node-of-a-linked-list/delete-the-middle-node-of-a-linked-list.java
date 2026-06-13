@@ -15,24 +15,18 @@ class Solution {
             return null;
         }
 
-        int count = 0;
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode prev = null;
 
-        ListNode temp = head;
+        while (fast != null && fast.next != null) {
 
-        while (temp != null) {
-            count++;
-            temp = temp.next;
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        int middle = count / 2;
-
-        temp = head;
-
-        for (int i = 0; i < middle - 1; i++) {
-            temp = temp.next;
-        }
-
-        temp.next = temp.next.next;
+        prev.next = slow.next;
 
         return head;
     }
