@@ -1,18 +1,26 @@
 class Solution {
     public int reverse(int x) {
 
-        boolean negative = x < 0;
+        int rev = 0;
 
-        String s = Integer.toString(Math.abs(x));
+        while (x != 0) {
 
-        StringBuilder sb = new StringBuilder(s);
-        sb.reverse();
+            int digit = x % 10;
 
-        try {
-            int ans = Integer.parseInt(sb.toString());
-            return negative ? -ans : ans;
-        } catch (Exception e) {
-            return 0;
+            if (rev > Integer.MAX_VALUE / 10 ||
+               (rev == Integer.MAX_VALUE / 10 && digit > 7)) {
+                return 0;
+            }
+
+            if (rev < Integer.MIN_VALUE / 10 ||
+               (rev == Integer.MIN_VALUE / 10 && digit < -8)) {
+                return 0;
+            }
+
+            rev = rev * 10 + digit;
+            x /= 10;
         }
+
+        return rev;
     }
 }
