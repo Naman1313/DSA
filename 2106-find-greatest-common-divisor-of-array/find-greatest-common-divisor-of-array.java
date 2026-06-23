@@ -7,12 +7,16 @@ class Solution {
             min = Math.min(min, num);
             max = Math.max(max, num);
         }
-        
-        for (int i = min; i >= 1; i--) {
-            if (min % i == 0 && max % i == 0) {
-                return i;
-            }
+
+        return gcd(min, max);
+    }
+
+    private int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-        return 1;
+        return a;
     }
 }
