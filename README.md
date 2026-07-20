@@ -1,63 +1,142 @@
-<div align="center">
-  <h1>🚀 50 Days of Code: #DrGViswanathan Challenge</h1>
-  <p><i>Building problem-solving skills</i></p>
+# 🚀 Data Structures & Algorithms (DSA) in Java
 
-  <img src="https://img.shields.io/badge/Language-Java-00599C?style=for-the-badge" alt="Java"/>
-  <img src="https://img.shields.io/badge/Institution-VIT_Bhopal-blue?style=for-the-badge" alt="VIT Bhopal"/>
-  <img src="https://img.shields.io/badge/Status-In_Progress-brightgreen?style=for-the-badge" alt="Status"/>
-</div>
+Welcome to my **DSA Repository**! 👋
+
+This repository contains my solutions to Data Structures and Algorithms problems solved in **Java** across various competitive programming and coding interview platforms. The primary goal of this repository is to improve problem-solving skills, strengthen algorithmic thinking, and prepare for coding interviews and programming contests.
 
 ---
 
-Welcome to my **50 Days DSA Challenge** repository!
+## 📚 Platforms
 
-For the next 50 days, I will be solving Data Structures and Algorithms (DSA) problems consistently to improve my problem-solving skills, strengthen my understanding of core concepts, and build discipline through daily practice.
+- 🟡 LeetCode
+- 🔵 Codeforces
+- 🟤 CodeChef *(Coming Soon)*
+- 🟢 CSES *(Coming Soon)*
+- 🔴 AtCoder *(Coming Soon)*
 
-This repository serves as a record of my progress, learning, and growth throughout the challenge.
+---
 
-## 📌 Challenge Objectives
+## 💻 Programming Language
 
-* Strengthen DSA fundamentals.
-* Improve logical and analytical thinking.
-* Develop consistency through daily coding.
-* Prepare for coding interviews and competitive programming.
-* Track and showcase my learning journey on GitHub.
+- **Java**
 
-## 🛠️ Language
+---
 
-* Java ☕
+## 📂 Repository Structure
 
-## 📚 Topics Covered
+```text
+DSA/
+│
+├── LeetCode/
+│   ├── Arrays/
+│   ├── Strings/
+│   ├── Linked List/
+│   ├── Trees/
+│   ├── Graphs/
+│   └── ...
+│
+├── Codeforces/
+│   ├── 800/
+│   ├── 900/
+│   ├── 1000/
+│   ├── 1100/
+│   └── ...
+│
+├── CodeChef/
+│
+├── CSES/
+│
+├── AtCoder/
+│
+└── README.md
+```
 
-Throughout this challenge, I will be solving problems related to:
+---
 
-* Arrays
-* Strings
-* Linked Lists
-* Stacks & Queues
-* Recursion & Backtracking
-* Searching & Sorting
-* Hashing
-* Trees & Binary Search Trees
-* Heaps
-* Graphs
-* Dynamic Programming
-* Greedy Algorithms
-* Sliding Window
-* Two Pointers
-* Bit Manipulation
-* And more...
+## 📌 Topics Covered
 
-## 💻 Platforms
+- Arrays
+- Strings
+- Hashing
+- Sorting
+- Searching
+- Two Pointers
+- Sliding Window
+- Prefix Sum
+- Binary Search
+- Linked List
+- Stack
+- Queue
+- Trees
+- Binary Search Tree
+- Heap / Priority Queue
+- Graphs
+- Greedy Algorithms
+- Dynamic Programming
+- Backtracking
+- Bit Manipulation
+- Recursion
+- Math
+- Number Theory
+- Union Find (DSU)
+- Trie
 
-Problems may be sourced from:
+---
 
-* LeetCode
+## 🎯 Objectives
 
-## 🎯 Goal
+- Solve problems consistently.
+- Master Data Structures and Algorithms.
+- Prepare for coding interviews.
+- Improve competitive programming skills.
+- Learn multiple approaches to solving problems.
+- Write clean and optimized Java code.
 
-The goal of this challenge is not just to complete 50 days, but to build a strong foundation in Data Structures and Algorithms through continuous learning and consistent practice.
+---
 
-> "Success is the sum of small efforts, repeated day in and day out."
+## 📈 Progress
 
-Happy Coding! 🚀
+| Platform | Status |
+|----------|--------|
+| LeetCode | 🚀 In Progress |
+| Codeforces | 🚀 In Progress |
+| CodeChef | ⏳ Coming Soon |
+| CSES | ⏳ Coming Soon |
+| AtCoder | ⏳ Coming Soon |
+
+---
+
+## 📖 Problem Format
+
+Each problem directory contains:
+
+- ✅ Problem Statement
+- ✅ Approach
+- ✅ Algorithm
+- ✅ Time Complexity
+- ✅ Space Complexity
+- ✅ Java Solution
+
+---
+
+## ⭐ Example Structure
+
+```text
+Codeforces/
+└── 800/
+    └── A. Watermelon/
+        ├── README.md
+        └── Solution.java
+```
+
+```text
+LeetCode/
+└── 1. Two Sum/
+    ├── README.md
+    └── Solution.java
+```
+
+---
+
+
+### Happy Coding! 🚀
