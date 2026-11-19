@@ -2,11 +2,11 @@ class Solution {
     public int[] replaceElements(int[] arr) {
         int rightmax = -1;
         int n = arr.length;
-        int[] ans = new int[n];
         for(int i=n-1; i>=0; i--){
-            ans[i] = rightmax;
-            rightmax= Math.max(rightmax,arr[i]);
+            int temp = arr[i];
+            arr[i] = rightmax;
+            rightmax= Math.max(rightmax,temp);
         }
-        return ans;
+        return arr;
     }
 }
