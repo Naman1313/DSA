@@ -1,24 +1,24 @@
-class Solution {
-    public int calPoints(String[] operations) {
-        ArrayList<Integer> ans = new ArrayList<>();
-        for(String item:operations){
-            if(item.equals("+")){
-                ans.add(ans.get(ans.size()-1) + ans.get(ans.size()-2));
-            }
-            else if(item.equals("D")){
-                ans.add(ans.get(ans.size()-1)*2);
-            }
-            else if(item.equals("C")){
-                ans.remove(ans.get(ans.size()-1));
-            }
-            else{
-                ans.add(Integer.parseInt(item));
+public class Solution {
+    public int calPoints(String[] ops) {
+        int res = 0;
+        Stack<Integer> stack = new Stack<>();
+        for (String op : ops) {
+            if (op.equals("+")) {
+                int top = stack.pop();
+                int newTop = top + stack.peek();
+                stack.push(top);
+                stack.push(newTop);
+                res += newTop;
+            } else if (op.equals("D")) {
+                stack.push(2 * stack.peek());
+                res += stack.peek();
+            } else if (op.equals("C")) {
+                res -= stack.pop();
+            } else {
+                stack.push(Integer.parseInt(op));
+                res += stack.peek();
             }
         }
-        int sum = 0;
-        for(int val:ans){
-            sum += val;
-        }
-        return sum;
+        return res;
     }
 }
